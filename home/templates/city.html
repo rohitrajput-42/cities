@@ -37,15 +37,15 @@
 
     {% for lef in lefs %}
     <div class = "row">
-        <div class = "col-lg-5 mx-auto mt-5 ml-4">
-            <img src="{{lef.img.url}}" class="rounded float-left">
-        </div>
         
-
-        <div class = "class col-lg-7 mx-auto mt-5 mr-5">
-            <h1>{{lef.title}}</h1>
-            <p> {{lef.desc}}</p>
-        </div>
+      <div class="card mt-4 ml-5">
+        <img src="{{lef.img.url}}" class="card-img-top" style="width: 520px; height: 340px; ">
+      </div>
+      
+      <div class = "class col-lg-7 mx-auto mt-5 mr-5">
+          <h1>{{lef.title}}</h1>
+          <p> {{lef.desc}}</p>
+      </div>
     </div>
     {% endfor %}
 
