@@ -1,0 +1,41 @@
+.container{
+    text-align: center;
+    margin-top: 50px;
+}
+
+.container h1{
+    color: darkgrey;
+    font-size: 50px;
+    font-family: sans-serif;
+    font-weight: lighter;
+}
+
+.cards{
+    margin: 0 auto;
+    max-width: 1000px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    font-family: sans-serif;
+}
+
+.card{
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.3)
+}
+
+.card_image{
+    width: 100%;
+    display: block;
+}
+
+.card_content{
+    line-height: 1.5;
+    font-size: 0.9em;
+    padding: 15px;
+    background:#fff;
+}
+.card_content h3{
+    font-family: sans-serif;
+    font-size: 20px;
+    color: gray;
+}
