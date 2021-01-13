@@ -33,21 +33,22 @@
       </ul>
     </div>
   </nav>
-<!-- NAVBAR -->
+<!-- CITIES LIST -->
 
-    {% for lef in lefs %}
-    <div class = "row">
-        
-      <div class="card mt-4 ml-5">
-        <img src="{{lef.img.url}}" class="card-img-top" style="width: 520px; height: 340px; ">
-      </div>
+  {% for lef in lefs %}
+  <div class = "row">
       
-      <div class = "class col-lg-7 mx-auto mt-5 mr-5">
-          <h1>{{lef.title}}</h1>
-          <p> {{lef.desc}}</p>
-      </div>
+    <div class="card mt-4 ml-5">
+      <img src="{{lef.img.url}}" class="card-img-top" style="width: 520px; height: 340px; ">
     </div>
-    {% endfor %}
+    
+    <div class = "class col-lg-7 mx-auto mt-5 mr-5">
+      <h1>{{lef.title}}</h1>
+      <p> {{lef.desc}}</p>
+    </div>
+  </div>
+  {% endfor %}
+  <!-- CITIES LIST -->  
 
 </body>
 </html>
